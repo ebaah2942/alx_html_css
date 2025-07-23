@@ -3,7 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
+  width: 100%; /* Full width */
+  /* margin: 0; */
 }
 
 /* 2. Make <main> a flex container in row direction */
@@ -17,15 +18,64 @@ main {
 article {
   flex: 2;
   overflow-y: auto; /* Scroll vertically if needed */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin-top: 5px; /* Add some margin around the article */
 }
 
 aside {
   flex: 1;
-  overflow-y: auto; /* Scroll vertically if needed */
+  overflow-y: auto; 
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin-top: 5px; 
 }
 
 /* Optional: make header and footer fixed height */
-header, footer {
+header {
   padding: 1rem;
   background-color: #f0f0f0;
+   /* Add some margin around header and footer */
 }
+
+footer {
+  text-align: center;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+/* body {
+  background-color: #ffffff;
+  color: #333;
+} */
+
+h1 {
+  color: #0077cc;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.logo {
+  font-size: 1.8em;
+  margin-right: 15px;
+}
+
