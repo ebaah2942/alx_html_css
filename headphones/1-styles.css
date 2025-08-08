@@ -1,0 +1,171 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+   
+
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+
+header nav img {
+  width: 150px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hide toggle button on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    /* background: #fff; */
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 30px;
+    /* border: 1px solid #ddd; */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgb(238, 221, 221);
+}
+
+.what-we-do {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.what-we-do h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.services {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.service-item span {
+  font-size: 48px;
+  color: #FF6565;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.service-item p {
+  color: #444;
+  font-size: 0.95em;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+i {
+  font-size: 24px;
+  color: #FF6565;
+}
+
+#what-we-do {
+  /* background-color: #100f0f; */
+  padding: 50px 20px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#what-we-do h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  /* color: #fff; */
+  text-align: center;
+}
+
