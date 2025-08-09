@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="holberton_school-icon/css/style.css">
+  <link rel="stylesheet" href="2-styles.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo_headphones.png" alt="logo" />
+
+      <!-- Hamburger menu toggle button -->
+      <button class="menu-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#what-we-do">what we do</a></li>
+        <li><a href="#our-results">our results</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+        <p>Ipsam facere corporis exercitationem, autem iusto fugiat culpa veniam ab commodi necessitatibus. </p>
+        <button class="cta">Call To Action</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Ipsam facere corporis exercitationem, autem iusto fugiat culpa veniam ab commodi necessitatibus. 
+            Exercitationem ab blanditiis beatae, libero voluptatum corporis nihil harum eveniet?
+        </p>
+    </section>
+  </header>
+  <section id="what-we-do">
+    <h2>What we do…</h2>
+  <div class="services">
+    <div class="service-item">
+      <span class="holberton_school-icon-ic_sound"></span>
+      <h3>Sound Design</h3>
+      <p>Immersive audio for film, games, and events.</p>
+    </div>
+    <div class="service-item">
+      <span class="holberton_school-icon-ic_video"></span>
+      <h3>Video Production</h3>
+      <p>Cinematic-quality production for all platforms.</p>
+    </div>
+    <div class="service-item">
+      <span class="holberton_school-icon-ic_music"></span>
+      <h3>Music Creation</h3>
+      <p>Original tracks, mastering, and music strategy.</p>
+    </div>
+
+  </div>
+  </section>
+  <section id="our-results">
+    <div class="section-header">
+        <h2>Our results speak for themselves</h2>
+        <p>See how we’ve helped our clients grow over the years.</p>
+    </div>
+    <div class="results-container">
+         <div class="pentagon-wrapper">
+            <h3>+2M</h3>
+            <p>Downloads</p>
+        </div>
+        <div class="pentagon-wrapper">
+            <h3>+2M</h3>
+            <p>Downloads</p>
+        </div>
+        <div class="pentagon-wrapper">
+            <h3>+300%</h3>
+            <p>Revenue Growth</p>
+        </div>
+        <div class="pentagon-wrapper">
+            <h3>+200k</h3>
+            <p>Subscribers</p>
+        </div>
+    </div>
+</section>
+
+
+  <script>
+    // JS to toggle menu on small screens
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
